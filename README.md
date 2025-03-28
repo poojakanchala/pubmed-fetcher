@@ -1,7 +1,7 @@
-# pubmed-fetcher
-# get-papers-dist
+# pubmed_fetchers
 
-`get-papers-dist` is a Python command-line tool designed to fetch research papers from PubMed based on user-specified queries. The program identifies papers with authors affiliated with pharmaceutical or biotech companies and outputs the results in a structured CSV format. It uses the PubMed API for fetching articles and provides flexible options for filtering and saving results.
+
+`pubmed_fetchers` is a Python command-line tool designed to fetch research papers from PubMed based on user-specified queries. The program identifies papers with authors affiliated with pharmaceutical or biotech companies and outputs the results in a structured CSV format. It uses the PubMed API for fetching articles and provides flexible options for filtering and saving results.
 
 ## Table of Contents
 1. [Code Organization](#code-organization)
@@ -12,13 +12,14 @@
 
 ## Code Organization
 The project is organized as follows:
-get-papers-dist/
+pubmed_fetchers/
 ├── paper_fetcher/
 │ ├── init.py # Package initialization
-│ ├── pubmed_client.py # Handles PubMed API integration
+│ ├── pubmed_fetcher.py # Handles PubMed API integration
 │ ├── author_analysis.py # Filters authors based on affiliations
-│ └── csv_writer.py # Writes results to CSV format
+│ 
 ├── tests/ # Unit tests for the project
+ ___ test_fetchers
 ├── pyproject.toml # Poetry configuration file
 ├── README.md # Project documentation
 └── get_papers_dist/
