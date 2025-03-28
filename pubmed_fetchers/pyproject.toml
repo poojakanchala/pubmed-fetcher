@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "my-package"
+version = "0.1.0"
+description = "A short description of the package."
+
+[tool.poetry.dependencies]
+requests = "^2.25.0"
+numpy = "^1.21.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]  # Ensure this points to your tests directory
